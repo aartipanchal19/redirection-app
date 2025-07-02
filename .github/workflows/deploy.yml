@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22.13.1
 
       - name: Install dependencies
         run: npm install
@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: react-web-app
+          app-name: redirection-app
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: build
