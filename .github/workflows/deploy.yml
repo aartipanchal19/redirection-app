@@ -3,8 +3,7 @@ name: Deploy React App to Azure using Publish Profile
 on:
   push:
     branches:
-      - main  # or your chosen deployment branch
-
+      - main  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
